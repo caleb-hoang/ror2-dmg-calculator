@@ -1,0 +1,23 @@
+[
+    {
+    "name": "Lensmakers Glasses",
+    "crit": 10
+},
+
+{
+    "name": "AtG Missile Mk. 1",
+    "proc-chance": 10,
+    "damage": 300,
+    "stack-type": "damage",
+    "stack": 300
+},
+
+{
+    "name": "Sticky Bomb",
+    "proc-chance": 5,
+    "damage": 180,
+    "stack-type": "chance",
+    "stack": 5  
+}
+
+]
