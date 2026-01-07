@@ -1,7 +1,9 @@
 [
     {
     "name": "Lensmakers Glasses",
-    "crit": 10
+    "crit": 10,
+    "stack-type": "crit",
+    "stack": 10
 },
 
 {
