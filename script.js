@@ -16,12 +16,12 @@ async function populateItemList() {
   console.log("Populating list!")
   dropdown = document.getElementById("myDropdown")
   for (var i = 0; i < items.length; i ++) {
-    var item = items[i]
     newItem = document.createElement('a')
-    newItem.textContent = item.name
-    newItem.addEventListener('click', () => addItem(item))
-    console.log(item.name)
+    newItem.textContent = items[i].name
+    newItem.addEventListener('click', () => addItem(items[i]))
+    console.log(items[i].name)
     dropdown.appendChild(newItem)
+    console.log(item)
   }
   filterFunction()
 }
@@ -46,7 +46,7 @@ function filterFunction() {
 // Adds an item to the board, or increments item stack by one if already existing.
 function addItem(item) {
   console.log("Looking for item!")
-  console.log(items.find(obj => obj.name == item.name))
+  console.log(items.find(thing => thing.name === item.name))
 }
 
 populateItemList()
