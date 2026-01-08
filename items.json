@@ -1,34 +1,123 @@
 [
 {
-    "name": "AtG Missile Mk. 1",
-    "proc-chance": 10,
-    "damage": 300,
-    "stack-type": "damage",
-    "stack": 300,
-    "priority": 2
-},
-
-{
-    "name": "Sticky Bomb",
-    "proc-chance": 5,
-    "damage": 180,
-    "stack-type": "chance",
-    "stack": 5,
-    "priority":3
-},
-
-{
     "name": "Armor Piercing Rounds",
-    "damage": 20,
+    "damage": 1.20,
     "stack-type": "damage",
-    "stack": 20,
+    "stack": 0.20,
     "priority": 0
 },
 
 {
     "name": "Bundle of Fireworks",
-    "damage": 300,
-    "priority":1
-}
+    "damage": 3.0,
+    "stack-type":"none",
+    "stack": 0,
+    "priority":1,
+    "coefficient": 1.0
+},
 
+{
+    "name": "Crowbar",
+    "damage": 1.75,
+    "stack-type": "damage",
+    "stack": 0.75,
+    "priority": 0
+
+},
+
+{
+    "name": "Focus Crystal",
+    "damage": 1.20,
+    "stack-type": "damage",
+    "stack": 1.20,
+    "priority": 0
+},
+
+{
+    "name": "AtG Missile Mk. 1",
+    "damage": 3.0,
+    "stack-type": "damage",
+    "stack": 3.00,
+    "priority": 2,
+    "chance": 0.1,
+    "coefficient": 1
+},
+
+{
+    "name": "Death Mark",
+    "damage": 1.50,
+    "stack-type": "none",
+    "stack": 0,
+    "priority": 0
+},
+
+{
+    "name": "Kjaro's Band",
+    "damage": 3.00,
+    "stack-type":"damage",
+    "stack": 3.00,
+    "priority": 3
+},
+
+{
+    "name": "Razorwire",
+    "damage": 1.60,
+    "stack-type": "none",
+    "stack": 0,
+    "priority": 1,
+    "coefficient": 0.5
+},
+
+{
+    "name": "Runald's Band",
+    "damage": 2.50,
+    "stack-type": "damage", 
+    "stack": 2.50,
+    "priority": 3
+},
+
+{
+    "name": "Ukulele",
+    "damage": 0.80,
+    "stack-type":"none",
+    "stack": 0,
+    "priority": 2,
+    "chance": 25,
+    "coefficient": 0.2
+},
+
+{
+    "name":"Brilliant Behemoth",
+    "damage": 1.6,
+    "stack-type":"none",
+    "stack":0,
+    "priority":0
+},
+
+{
+    "name": "Ceremonial Dagger",
+    "damage": 1.5,
+    "stack-type": "damage",
+    "stack": 1.5,
+    "priority": 1,
+    "coefficient": 1
+},
+
+{
+    "name":"H3AD-5T v2",
+    "damage":100.00,
+    "stack-type": "none",
+    "stack": 0,
+    "priority": 1,
+    "coefficient": 1
+},
+
+{
+    "name": "Unstable Tesla Coil",
+    "damage": 2.0,
+    "stack-type":"none",
+    "stack": 0,
+    "priority":1,
+    "coefficient":0.3
+}
 ]

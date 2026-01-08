@@ -18,6 +18,8 @@ An index of each damaging item in the game can be found in items.json. Each item
     - The numerical value indicating how much an extra stack impacts the item's stats. For example, a stack of ATG increases TOTAL damage by 300%, while an extra stack of Sticky Bomb increases proc chance by 5%.
 - priority
     - Where in a proc chain the damage is applied. The explanation for this is a bit long-winded, so it has its own section later on. Just know that it has to do with HOW an item's damage scaling interacts with both a base attack and the items it triggers.
+- coefficient
+    - For an item with priority 1 or 2, the item's proc coefficient.
 
 
 ## Priority
@@ -30,3 +32,11 @@ Each item has its own priority level, based on how its damage is applied.
 - Items with priority two (Ukulele, ATG, Perferators) are proc items - these items are TRIGGERED by other attacks (either those triggered by priority one items or priority two items). They have a % chance to proc, but are assumed to succeed for the sake of damage calculation.
 
 - Items with priority three (Runald's/Kjaro's Bands, Sticky Bomb) are FINAL items - these items can only be triggered by items with priority one or two, but cannot trigger other items, usually due to their own proc coefficient of zero. These determine the final damage calculation of each attack. Multiple priority 3 triggers can happen at the same time in a proc chain.
+
+
+## CURRENTLY EXCLUDED ITEMS
+    - All DLC items
+    - Any items that do not directly grant a damage multiplier of some sort (movement, health, critical hit items, etc.)
+    - Frost Relic. Until I can test the item out, I am unsure of how the 1200% damage per second listed by the wiki is distributed per hit.
+    - N'kuhana's Opinion. The item scales off of HP, rather than base damage, which the tool does not yet reflect.
+    - Shattering Justice. The damage bonus granted by armor reduction differs based on the enemy affected (Armor reduction generally has a greater impact against bosses than standard enemies.)
