@@ -1,5 +1,5 @@
 # ror2-dmg-calculator
-Tool to calculate the damage, potential proc chains, and potential DPS of all base game items in Risk of Rain 2.
+Web-based tool to calculate the damage, potential proc chains, and potential DPS of all base game items in Risk of Rain 2.
 
 This calculator currently assumes the best possible conditions - that is, all random checks pass, all enemies are boss enemies, all enemies are above 90% health, etc. This means that damage calculations may not be entirely useful in context of the game - for example, it is possible for a Bundle oF Fireworks => Ukulele => ATG proc chain to happen, but has a meager .5% (.25 * .2 * .10) chance to occur per rocket. Certainly possible -- and probable given a long enough run -- but not reliable as a consistent DPS calculation. All calculations list the probability at each step of the proc chain.
 
@@ -15,7 +15,7 @@ An index of each damaging item in the game can be found in items.json. Each item
 - stack-type
     - How an item's statistics change as a player collects more of each item. For example, an extra stack of ATG increases TOTAL damage %, while an extra stack of Sticky Bomb increases its proc chance.
 - stack
-    - The numerical value indicating how much an extra stack impacts the item. For example, a stack of ATG increases TOTAL damage by 300%, while an extra stack of Sticky Bomb increases proc chance by 5%.
+    - The numerical value indicating how much an extra stack impacts the item's stats. For example, a stack of ATG increases TOTAL damage by 300%, while an extra stack of Sticky Bomb increases proc chance by 5%.
 - priority
     - Where in a proc chain the damage is applied. The explanation for this is a bit long-winded, so it has its own section later on. Just know that it has to do with HOW an item's damage scaling interacts with both a base attack and the items it triggers.
 
