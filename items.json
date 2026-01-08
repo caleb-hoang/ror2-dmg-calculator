@@ -1,17 +1,11 @@
 [
-    {
-    "name": "Lensmakers Glasses",
-    "crit": 10,
-    "stack-type": "crit",
-    "stack": 10
-},
-
 {
     "name": "AtG Missile Mk. 1",
     "proc-chance": 10,
     "damage": 300,
     "stack-type": "damage",
-    "stack": 300
+    "stack": 300,
+    "priority": 2
 },
 
 {
@@ -19,7 +13,22 @@
     "proc-chance": 5,
     "damage": 180,
     "stack-type": "chance",
-    "stack": 5  
+    "stack": 5,
+    "priority":3
+},
+
+{
+    "name": "Armor Piercing Rounds",
+    "damage": 20,
+    "stack-type": "damage",
+    "stack": 20,
+    "priority": 0
+},
+
+{
+    "name": "Bundle of Fireworks",
+    "damage": 300,
+    "priority":1
 }
 
 ]
