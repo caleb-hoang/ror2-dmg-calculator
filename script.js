@@ -28,9 +28,6 @@ async function populateItemList() {
   console.log(items)
 }
 
-function fail() {
-  console.log("Error!")
-}
 
 // Filters the list of items based on user input.
 function filterFunction() {
