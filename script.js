@@ -1,29 +1,35 @@
-let items = new Array(0)
+let items = []
 
-fetch('items.json')
-    .then(response => response.json())
-    .then(data => {
-      data.forEach(obj => {items.push(obj)})
-      console.log(items)
-    })
-    .catch(error => console.error('Error fetching item data: ', error))
-
-
+async function fetchData() {
+  try {
+    const response = await fetch("http://127.0.0.1:3000/items.json");
+    const data = await response.json();
+    items = data
+  } catch (error) {
+    console.error('Error loading data:', error);
+  }
+  console.log(items)
+}
 
 // After fetching all items from items.json, populates the list of items.
 async function populateItemList() {
-  const response = await fetch('items.json')
+  await fetchData()
   console.log("Populating list!")
-  dropdown = document.getElementById("myDropdown")
-  for (var i = 0; i < items.length; i ++) {
-    newItem = document.createElement('a')
-    newItem.textContent = items[i].name
-    newItem.addEventListener('click', () => addItem(items[i]))
-    console.log(items[i].name)
+  const dropdown = document.getElementById("myDropdown")
+  for (let i = 0; i < items.length; i ++) {
+    const newItem = document.createElement('a')
+    newItem.textContent = items[i].name.repeat(1)
+    item_name = items[i].name.repeat(1)
+    newItem.addEventListener('click', () => {addItem(newItem.textContent)})
+    console.log(item_name)
     dropdown.appendChild(newItem)
-    console.log(item)
   }
   filterFunction()
+  console.log(items)
+}
+
+function fail() {
+  console.log("Error!")
 }
 
 // Filters the list of items based on user input.
@@ -44,9 +50,10 @@ function filterFunction() {
 }
 
 // Adds an item to the board, or increments item stack by one if already existing.
-function addItem(item) {
+function addItem(itemName) {
   console.log("Looking for item!")
-  console.log(items.find(thing => thing.name === item.name))
+  console.log(itemName)
+  console.log(items.find((thing) => {return thing.name === itemName}))
 }
 
 populateItemList()
