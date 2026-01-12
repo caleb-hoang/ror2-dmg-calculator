@@ -29,7 +29,7 @@ async function populateItemList() {
 }
 
 
-// Filters the list of items based on user input.
+// Filters the list of items based on user input. Called on keyup in the main search box.
 function filterFunction() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("myInput")

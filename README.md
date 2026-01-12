@@ -39,4 +39,4 @@ Each item has its own priority level, based on how its damage is applied.
     - Any items that do not directly grant a damage multiplier of some sort (movement, health, critical hit items, etc.)
     - Frost Relic. Until I can test the item out, I am unsure of how the 1200% damage per second listed by the wiki is distributed per hit.
     - N'kuhana's Opinion. The item scales off of HP, rather than base damage, which the tool does not yet reflect.
-    - Shattering Justice. The damage bonus granted by armor reduction differs based on the enemy affected (Armor reduction generally has a greater impact against bosses than standard enemies.)
+    - Shattering Justice. The damage bonus granted by armor reduction differs based on the enemy affected (Armor reduction generally has a greater impact against bosses than standard enemies, for example.)
